@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Rajdhani:wght@300;400;500&display=swap');
+
+body{
+    background-color: #141a1a;
+}
+
+:root{
+    --headingText: 'Londrina Shadow', 'cursive';
+    --infoText: 'Rajdhani', 'sans-serif';
+}
+
+/* ______________________________BODY CONTENT STARTED______________________________ */
+#bodyContent{
+    margin-top: 10%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+#jokesDivision{
+    color: whitesmoke;
+    width: 75%;
+    min-height: 95vh;
+}
+
+#jokesDivision > h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    color: whitesmoke;
+    font-weight: 400;
+    font-family: var(--headingText);
+}
+
+#jokesInfo{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 400; 
+    font-family: var(--infoText);
+}
+
+#jokes{
+    padding: 2em;
+}
+/* ______________________________BODY CONTENT ENDED______________________________ */
+
+/* ______________________________FOOTER STARTED______________________________ */
+footer{
+    display: flex;
+    justify-content: center;
+    color: #67899d;
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: #67899d;
+    font-weight: bold;
+}
+/* ______________________________FOOTER ENDED______________________________ */
+
+
+@media screen and (max-width: 480px) {
+    #jokesDivision > h2{
+        font-size: 45px;
+        /* border: 1px solid wheat; */
+    }
+    #jokesInfo{
+        font-size: 23px;
+        /* border: 1px solid wheat; */
+    }
+  }
