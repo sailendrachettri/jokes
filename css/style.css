@@ -50,8 +50,13 @@ body{
 /* ______________________________FOOTER STARTED______________________________ */
 footer{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     color: #67899d;
+}
+
+footer > p{
+    margin: 5px 0;
 }
 
 footer > p > a{
@@ -63,12 +68,13 @@ footer > p > a{
 
 
 @media screen and (max-width: 480px) {
+    #jokesDivision{
+        width: 100vw;
+    }
     #jokesDivision > h2{
         font-size: 45px;
-        /* border: 1px solid wheat; */
     }
     #jokesInfo{
         font-size: 23px;
-        /* border: 1px solid wheat; */
     }
   }
