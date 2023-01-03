@@ -6,8 +6,6 @@ const options = {
 	}
 };
 
-
-
 function changeJokes() {
 
 	fetch('https://jokes-by-api-ninjas.p.rapidapi.com/v1/jokes', options)
@@ -25,11 +23,4 @@ function changeJokes() {
 }
 
 changeJokes();
-
-setInterval(changeJokes, 15000);
-
-// _________________________________FOOTER STARTED_________________________________
-let date = new Date();
-let year = date.getFullYear();
-footerYear.innerHTML = year;
-// _________________________________FOOTER ENDED_________________________________
+setInterval(changeJokes, 11000);
